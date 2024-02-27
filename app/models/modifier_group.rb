@@ -1,4 +1,6 @@
 class ModifierGroup < ApplicationRecord
+  has_many :modifiers
+
   validates :label, presence: true
   validates :label, uniqueness: true
   validates :selection_required_min, numericality: { greater_than_or_equal_to: 0 }
