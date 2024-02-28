@@ -10,5 +10,6 @@ module Types
     field :update_section, mutation: Mutations::Section::UpdateSection
 
     field :create_item, mutation: Mutations::Item::CreateItem
+    field :update_item, mutation: Mutations::Item::UpdateItem
   end
 end
