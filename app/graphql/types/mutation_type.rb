@@ -7,5 +7,6 @@ module Types
     field :destroy_menu, mutation: Mutations::Menu::DestroyMenu
 
     field :create_section, mutation: Mutations::Section::CreateSection
+    field :update_section, mutation: Mutations::Section::UpdateSection
   end
 end
