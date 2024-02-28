@@ -16,5 +16,6 @@ module Types
     field :update_modifier, mutation: Mutations::Modifier::UpdateModifier
 
     field :create_modifier_group, mutation: Mutations::ModifierGroup::CreateModifierGroup
+    field :update_modifier_group, mutation: Mutations::ModifierGroup::UpdateModifierGroup
   end
 end
