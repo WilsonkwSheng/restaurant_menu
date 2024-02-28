@@ -16,7 +16,7 @@ module Mutations
         raise 'Section does not exist' if section.nil?
 
         item = section.items.create!(attributes)
-        item.section_items.create!(section: section, display_order: display_order)
+        section.section_items.find_by(item: item).update!(display_order: display_order)
 
         { item: item }
       rescue ActiveRecord::RecordInvalid => e
