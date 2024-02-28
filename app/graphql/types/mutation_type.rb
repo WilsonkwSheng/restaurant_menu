@@ -13,5 +13,6 @@ module Types
     field :update_item, mutation: Mutations::Item::UpdateItem
 
     field :create_modifier, mutation: Mutations::Modifier::CreateModifier
+    field :update_modifier, mutation: Mutations::Modifier::UpdateModifier
   end
 end
