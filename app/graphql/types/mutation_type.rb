@@ -8,5 +8,7 @@ module Types
 
     field :create_section, mutation: Mutations::Section::CreateSection
     field :update_section, mutation: Mutations::Section::UpdateSection
+
+    field :create_item, mutation: Mutations::Item::CreateItem
   end
 end

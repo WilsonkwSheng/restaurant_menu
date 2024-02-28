@@ -5,6 +5,7 @@ module Types
       field :label, String, null: false
       field :description, String, null: false
       field :display_order, Integer, null: false
+      field :items, [Types::Model::Item], null: true
 
       def display_order
         object.menu_sections.last.display_order
