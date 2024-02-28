@@ -7,6 +7,7 @@ module Types
       field :price, Float, null: false
       field :type, String, null: true
       field :display_order, Integer, null: true
+      field :modifiers, [Types::Model::Modifier], null: true
 
       def display_order
         object.section_items.last.display_order
